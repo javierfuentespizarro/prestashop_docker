@@ -1,7 +1,7 @@
 version: "3.3"
 services:
   web:
-    build: ./prestashop_docker
+    build: ./
     ports:
       - "9990:80"
       - "9993:443"

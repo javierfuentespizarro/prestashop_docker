@@ -3,4 +3,4 @@ RUN apt-get update && apt-get install -y unzip php libapache2-mod-php php-cli ph
 RUN a2enmod rewrite
 # Descargar PrestaShop
 ADD https://www.prestashop.com/download/old/prestashop_1.7.4.4.zip /var/www/html
-RUN cd /var/www/html && unzip prestashop_1.7.4.4.zip && rm prestashop_1.7.4.4.zip && chown -R www-data:www-data /var/www/htm
+RUN cd /var/www/html && unzip prestashop_1.7.4.4.zip && rm prestashop_1.7.4.4.zip && chown -R www-data:www-data /var/www/html

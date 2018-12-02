@@ -5,8 +5,6 @@ services:
     ports:
       - "9990:80"
       - "9993:443"
-    volumes:
-      - ./prestashop:/var/www/html
   db:
     image: mysql:5.7
     environment:
